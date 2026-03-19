@@ -12,7 +12,7 @@ volatile int IBI = 600;
 volatile bool Pulse = false;
 volatile bool QS = false;
 
-static bool serialVisual = true;
+static bool serialVisual = false;
 
 volatile int rate[10];
 volatile unsigned long sampleCounter = 0;
@@ -22,7 +22,7 @@ volatile int T = 512;
 volatile int thresh = 525;
 volatile int amp = 100;
 volatile bool firstBeat = true;
-volatile bool secondBeat = false;
+volatile bool secondBeat = false;  
 
 // Function prototypes
 void interruptSetup();
